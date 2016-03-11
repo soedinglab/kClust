@@ -67,3 +67,10 @@ kClust can take the results from its previous run as input and further merge clu
     kClust -i /path/to/output/directory -d /path/to/output/directory_second_round -P
   
 and kClust will merge clusters from the first round and write the results into /path/to/output/directory_second_round directory in the usual kClust format.
+
+##References
+
+    [1] Maria Hauser, Christian E Mayer and Johannes Söding (2013).
+        kClust: fast and sensitive clustering of large protein sequence databases.
+        BMC Bioinformatics, 2013, 14:248. DOI: 10.1186/1471-2105-14-248
+
