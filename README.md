@@ -7,19 +7,19 @@ kClust generates a clustering where each cluster is represented by its longest s
 ##HOW TO COMPILE KCLUST?
 
 To compile, change into the directory where you have kClust source files and type 
-  ```make all```
+    make all
 It may be necessary to assign different values to CXX (Compiler) and CXXFLAGS (Compiler options) variables in the Makefile that are appropriate for your system.
 
 ##GETTING STARTED
 
 To get started with the clustering, type
-  ```kClust -i /home/maria/your_db_in_fasta_format.fas -d /path/to/output/directory```
+    kClust -i /home/maria/your_db_in_fasta_format.fas -d /path/to/output/directory
 This call clusters the database down to 30% sequence identity. To adjust the minimum sequence identity in the clusters, use the -s option (score per column).
 
 ##KCLUST OPTIONS LIST
 
-Typing  
-  ```kClust```  
+Typing
+    kClust
 provides a full list of kClust options and the correspondance of the minimum sequence identity in the cluster and score per column (see -s option).
 
 ##OUTPUT FILES
