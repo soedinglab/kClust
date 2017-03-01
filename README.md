@@ -4,8 +4,8 @@
 kClust is a fast and sensitive clustering method for the clustering of protein sequences. It is able to cluster large protein databases down to 20-30% sequence identity.
 kClust generates a clustering where each cluster is represented by its longest sequence (representative sequence).
 
-Since the development of kClust we have developed a new software from scratch based on similar ideas, MMseqs[2]. We recommend you to use MMseqs instead of kClust.
-[Download MMseqs here](https://github.com/soedinglab/MMseqs)
+Since the development of kClust we have developed a new software from scratch based on similar ideas, MMseqs[2]. We recommend you to use MMseqs2 instead of kClust.
+[Download MMseqs2 here](https://github.com/soedinglab/MMseqs2)
 
 
 ##HOW TO COMPILE KCLUST?
