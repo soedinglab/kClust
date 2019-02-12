@@ -1,5 +1,5 @@
 
-#WHAT IS KCLUST?
+# WHAT IS KCLUST?
 
 kClust is a fast and sensitive clustering method for the clustering of protein sequences. It is able to cluster large protein databases down to 20-30% sequence identity.
 kClust generates a clustering where each cluster is represented by its longest sequence (representative sequence).
@@ -8,7 +8,7 @@ Since the development of kClust we have developed a new software from scratch ba
 [Download MMseqs2 here](https://github.com/soedinglab/MMseqs2)
 
 
-##HOW TO COMPILE KCLUST?
+## HOW TO COMPILE KCLUST?
 
 To compile, change into the directory where you have kClust source files and type 
 
@@ -16,7 +16,7 @@ To compile, change into the directory where you have kClust source files and typ
     
 It may be necessary to assign different values to CXX (Compiler) and CXXFLAGS (Compiler options) variables in the Makefile that are appropriate for your system.
 
-##GETTING STARTED
+## GETTING STARTED
 
 To get started with the clustering, type
 
@@ -24,7 +24,7 @@ To get started with the clustering, type
 
 This call clusters the database down to 30% sequence identity. To adjust the minimum sequence identity in the clusters, use the -s option (score per column).
 
-##KCLUST OPTIONS LIST
+## KCLUST OPTIONS LIST
 
 Typing
 
@@ -32,7 +32,7 @@ Typing
     
 provides a full list of kClust options and the correspondance of the minimum sequence identity in the cluster and score per column (see -s option).
 
-##OUTPUT FILES
+## OUTPUT FILES
 
 kClust produces following files as output:
 
@@ -43,7 +43,7 @@ kClust produces following files as output:
 
 If the --write-time-benchmark option is set, kClust will additionally write the files tb_prefiltering.dat, tb_kDP.dat and tb_all.dat which contain the sequences that need the most computation time in the prefiltering step, kDP step and overall, respectively.
 
-##GENERATING CLUSTER ALIGNMENTS
+## GENERATING CLUSTER ALIGNMENTS
 
 For generating one multiple sequence alignment file for each cluster, please use kClust_mkAln. Type
 
@@ -64,7 +64,7 @@ I warmly recommend to use following options:
 
 !WARNING! The -p option for the parallel calculation of multiple sequence alignments on the computer cluster works at the time only on our computer cluster and will not work anywhere else!
 
-##ITERATIVE KCLUST
+## ITERATIVE KCLUST
 
 kClust can take the results from its previous run as input and further merge clusters. This merging is based on the profile-consensus sequence comparison of the clusters and is therefore more sensitive than simple sequence-sequence comparison. As basis for the merging, you have to calculate the multiple sequence alignments of the clusters (with kClust_mkAln). Afterwards, you have to convert the MSAs into a3m format (for example, with hhconsensus program) and compute HMMs in hhm format (for example, with hhmake). Then, you can type
 
@@ -72,7 +72,7 @@ kClust can take the results from its previous run as input and further merge clu
   
 and kClust will merge clusters from the first round and write the results into /path/to/output/directory_second_round directory in the usual kClust format.
 
-##References
+## References
 
     [1] Maria Hauser, Christian E Mayer and Johannes Söding (2013).
         kClust: fast and sensitive clustering of large protein sequence databases.
